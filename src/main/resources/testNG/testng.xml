@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationExample" >
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+    <test name="ExampleTest">
+        <parameter name="browser" value="chrome"/>
+        <packages>
+            <package name="tests.register.*"/>
+        </packages>
+    </test>
+</suite>
